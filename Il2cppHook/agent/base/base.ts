@@ -649,5 +649,5 @@ declare global {
     var getGCInstance: (inputClass?: string | NativePointer | Il2Cpp.Class) => Array<Il2Cpp.Object>
     var showGCInstance: () => void
 
-    var soAddr: NativePointerValue
+    var soAddr: NativePointer
 }

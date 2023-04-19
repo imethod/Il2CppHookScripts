@@ -14,7 +14,15 @@ const main = () => {
 
 const TODO_OTHERS = () => {
     Il2Cpp.perform(() => {
-        // HookSendMessage()
+        
+        Interceptor.attach(soAddr.add(0xAB3198), {
+            onEnter: function (args) {
+                PrintStackTraceN(this.context)
+            },
+            onLeave: function (ret) {
+               
+            }
+        })
     })
 }
 
